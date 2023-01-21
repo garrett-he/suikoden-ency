@@ -1,0 +1,52 @@
+{
+    "name": "suikoden-ency",
+    "version": "0.1.0",
+    "description": "An encyclopedia website for video game Suikoden: Tenmei No Chikai published by Koei Co..",
+    "private": true,
+    "scripts": {
+        "build": "vite build",
+        "dev": "vite --host",
+        "lint": "npm run lint:eslint && npm run lint:markdownlint && npm run lint:stylelint",
+        "lint:eslint": "eslint . --ext .ts",
+        "lint:markdownlint": "markdownlint *.md",
+        "lint:stylelint": "stylelint ./src/**/*.{vue,css,styl}",
+        "prepare": "husky install",
+        "test": "vitest --run"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/suikoden-ency/suikoden-ency.git"
+    },
+    "keywords": [
+        "suikoden",
+        "bandit",
+        "china",
+        "encyclopedia",
+        "video game",
+        "koei"
+    ],
+    "author": "Garrett HE <garrett.he@hotmail.com>",
+    "license": "GPL-3.0",
+    "dependencies": {
+        "vue": "^3.3.4",
+        "vue-router": "^4.2.2",
+        "vuex": "^4.1.0"
+    },
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^5.42.0",
+        "@typescript-eslint/parser": "^5.42.0",
+        "@vitejs/plugin-vue": "^4.2.3",
+        "@vue/test-utils": "^2.3.2",
+        "eslint": "^8.27.0",
+        "husky": "^8.0.1",
+        "jsdom": "^22.1.0",
+        "markdownlint-cli": "^0.32.2",
+        "stylelint": "^14.16.1",
+        "stylelint-stylus": "^0.17.1",
+        "stylus": "^0.59.0",
+        "stylus-loader": "^7.1.3",
+        "typescript": "^5.1.3",
+        "vite": "^4.3.9",
+        "vitest": "^0.33.0"
+    }
+}
